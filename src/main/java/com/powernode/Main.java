@@ -10,13 +10,23 @@ public class Main {
         Student student = new Student();
         student.setName("明明");
         student.setNo(1);
+        student.setEmail("qq.com");
         System.out.println(student);
-
     }
 }
 class Student{
     int no;
     String name;
+
+    String email;
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
     public int getNo() {
         return no;
